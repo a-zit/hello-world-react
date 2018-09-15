@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Navbar from '../src/component/Navbar.js';
-import Topic from '../src/component/TopicSection.js';
+import Navbar from './component/Index/Navbar.js';
+import Topic from './component/Index/TopicSection.js';
 class App extends Component {
   render() {
     return (
       <div>
-      <Navbar />
-      <Topic />
+        <Navbar />
+        <Topic />
       </div>
     );
   }
