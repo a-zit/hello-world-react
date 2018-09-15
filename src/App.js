@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Index from './component/Index'
+import Navbar from '../src/component/Navbar';
 class App extends Component {
   render() {
     return (
-      <Index/>
+      <Navbar />
     );
   }
 }
