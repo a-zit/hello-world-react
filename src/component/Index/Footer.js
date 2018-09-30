@@ -1,13 +1,17 @@
 import React from 'react';
+import styled from 'styled-components'
 
+const Bar = styled.div`
+    background-color: white;
+    height: 60px;
+    color: #69302c;
+`
 const Footer = () => (
-    <div>
-        <div className=''>
-            <div>
-                <p>This is footer</p>
-            </div>
+    <Bar className='pt-3'>
+        <div className='text-center'>
+            This is footer
         </div>
-    </div>
+    </Bar>
 );
 
 export default Footer;
