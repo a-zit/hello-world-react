@@ -1,26 +1,45 @@
 import React from 'react';
-import { BackGround1 , Box } from './style';
+import styled from 'styled-components'
+
+const Button = styled.button`
+    background-color: transparent;
+    border: 1px solid #69302c;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: #69302c;
+    cursor: pointer;
+    &:hover {
+        background-color: #69302c;
+        border: 1px solid white;
+        color: white;
+    }
+`
 
 const TopicSection = () => (
-    <BackGround1>
-        <div>
-            <div className='row container pt-5 pb-5'>
-                <div className='col-sm-3'>
-                    <h1>Hello World</h1>
-                    <a href='#About'><button type="button" class="btn btn-warning">Join</button></a>
-                </div>
-                <div className='col-sm-3'>
-                    <Box src='images/bever.png' className='img-fluid'></Box>
-                </div>
-                <div className='col-sm-3'>
-                    <Box src='images/bever.png' className='img-fluid'></Box>
-                </div>
-                <div className='col-sm-3'>
-                    <Box src='images/bever.png' className='img-fluid'></Box>
-                </div>
+    <div className='container'>
+        <div className='text-center'>
+            <h1>Hello World</h1>
+        </div>
+        <div className='row container pt-5 pb-5 m-0'>
+            <div className='col-sm-3 text-center'>
+                <img src='images/bever.png' className='img-fluid' />
+                <a href='#frontend'><Button>#FrontEnd</Button></a>
+            </div>
+            <div className='col-sm-3 text-center'>
+                <img src='images/bever.png' className='img-fluid' />
+                <a href='#design'><Button>#Design</Button></a>
+            </div>
+            <div className='col-sm-3 text-center'>
+                <img src='images/bever.png' className='img-fluid' />
+                <a href='#game'><Button>#Game</Button></a>
+            </div>
+            <div className='col-sm-3 text-center'>
+                <img src='images/bever.png' className='img-fluid' />
+                <a href='#infra'><Button>#Infra</Button></a>
             </div>
         </div>
-    </BackGround1>
+    </div>
 );
 
 export default TopicSection;
