@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Button = styled.button`
     background-color: transparent;
@@ -14,7 +14,7 @@ const Button = styled.button`
         border: 1px solid white;
         color: white;
     }
-`
+`;
 
 const TopicSection = () => (
     <div className='container'>

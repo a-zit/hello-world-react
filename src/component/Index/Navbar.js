@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styled from 'styled-components'
+import styled from 'styled-components';
 import { removeDotSegments } from 'uri-js';
 
 const Bar = styled.div`
@@ -10,13 +10,13 @@ const Bar = styled.div`
     width: 100vw;
     height: 60px;
     z-index: 2;
-`
+`;
 const Item = styled.a`
     color: ${props => props.color};
     &:hover {
         color: ${props => props.hover};
     }
-`
+`;
 
 const Navbar = () => (
     <Bar className='navbar navbar-expand'>
